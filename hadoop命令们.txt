@@ -1,0 +1,159 @@
+[root@localhost ~]# jar -tvf $HADOOP_HOME/share/hadoop/mapreduce/sources/hadoop-mapreduce-examples-2.2.0-sources.jar
+
+
+[root@localhost hduser]# hadoop fs -mkdir /input
+[root@localhost hduser]# hadoop fs -ls /input
+[root@localhost hduser]# hadoop fs -put test1.txt /input
+[root@localhost hduser]# hadoop fs -rm -r /output2
+[root@localhost hadoop-2.2.0]# hadoop fs -cat /input/test1.txt
+
+// demo
+[root@localhost ~]# hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/sources/hadoop-mapreduce-examples-2.2.0-sources.jar org.apache.hadoop.examples.WordCount /input /output
+
+*********************************************************************************************************
+lm!QAZ@WSX
+
+*********************************************************************************************************
+
+hive> create table docs (line STRING);
+hive> LOAD DATA INPATH 'test.log' OVERWRITE INTO TABLE docs;
+hive> create table word_counts as select word, count(1) as count from (select explode(split(line, '\s')) as word from docs) w   
+    > group by word
+    > order by word
+    > ;
+hive> select * from word_counts;
+
+//  If 'LOCAL' is omitted then it looks for the file in HDFS.
+hive> LOAD DATA LOCAL INPATH './examples/files/kv1.txt' OVERWRITE INTO TABLE pokes;
+hive> dfs -ls /;
+
+creates a table called invites with two columns and a partition column called ds. The partition column is a virtual column. It is not part of the data itself but is derived from the partition that a particular dataset is loaded into.
+hive> CREATE TABLE invites (foo INT, bar STRING) PARTITIONED BY (ds STRING)
+    > ROW FORMAT DELIMITED                                                 
+    > FIELDS TERMINATED BY '\t'                                            
+    > STORED AS TEXTFILE;
+	
+hive> LOAD DATA LOCAL INPATH '/root/test.log' OVERWRITE INTO TABLE invites PARTITION (ds='2008-08-15');
+
+hive> dfs -cat /user/hive/warehouse/invites/ds=2008-08-14/test.log;
+
+
+INSERT OVERWRITE TABLE docs SELECT a.bar FROM invites a;
+
+
+
+Simple Example Use Cases
+hive> create table u_data (  
+    > userid int,
+    > movieid int,
+    > rating int,
+    > unixtime string)
+    > row format delimited
+    > fields terminated by '\t'
+    > stored as textfile;
+	
+wget http://files.grouplens.org/datasets/movielens/ml-100k.zip
+
+unzip ml-100k.zip
+
+LOAD DATA LOCAL INPATH '/export/tmp/ml-100k/u.data' OVERWRITE INTO TABLE u_data ;
+
+hive> create table u_data_new (
+    > userid int,              
+    > movieid int,             
+    > rating int,              
+    > weekday int)             
+    > row format delimited     
+    > fields terminated by '\t';
+
+hive> add file /export/tmp/weekday_mapper.py
+
+INSERT OVERWRITE TABLE u_data_new
+SELECT
+  TRANSFORM (userid, movieid, rating, unixtime)
+  USING 'python weekday_mapper.py'
+  AS (userid, movieid, rating, weekday)
+FROM u_data;
+
+SELECT weekday, COUNT(*)
+FROM u_data_new
+GROUP BY weekday;
+
+
+*********************************************************************************************************
+ZooKeeper Getting Started Guide
+
+[root@localhost ~]# vim /export/zookeeper-3.4.6/conf/zoo.cfg
+[root@localhost ~]# /export/zookeeper-3.4.6/bin/zkServer.sh start
+[root@localhost ~]# jps
+[root@localhost ~]# /export/zookeeper-3.4.6/bin/zkCli.sh -server 127.0.0.1:2181
+
+[zk: 127.0.0.1:2181(CONNECTED) 0] create /zk_test mydata
+[zk: 127.0.0.1:2181(CONNECTED) 1] ls /
+[zk: 127.0.0.1:2181(CONNECTED) 2] get /zk_test
+[zk: 127.0.0.1:2181(CONNECTED) 5] set /zk_test junk
+[zk: 127.0.0.1:2181(CONNECTED) 7] delete /zk_test
+
+
+
+[zk: 127.0.0.1:2181(CONNECTED) 19] ls /hive_zookeeper_namespace/default
+hive> lock table docs exclusive;
+hive> unlock table docs;
+
+
+*********************************************************************************************************
+http://192.168.147.40:60010/	hbase web-UI
+http://192.168.147.40:50070/    hadoop web-UI
+
+Use Maven to build Java applications that use HBase with Linux-based HDInsight 
+
+mvn clean package
+
+mvn archetype:generate -DgroupId=com.microsoft.examples -DartifactId=hbaseapp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+hadoop jar hbaseapp-1.0-SNAPSHOT.jar com.microsoft.examples.SearchByEmail contoso.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*********************************************************************************************************
+// hadoop 配置
+<property>
+
+  <name>hadoop.tmp.dir</name>
+
+ <value>/home/hduser/hadoop/tmp/hadoop-${user.name}</value>
+
+ <description>A base for other temporarydirectories.</description>
+
+</property>
+
+<property>
+
+ <name>fs.default.name</name>
+
+ <value>hdfs://localhost:8010</value>
+
+ <description>The name of the default file system.  A URI whose
+
+ scheme and authority determine the FileSystem implementation.  The
+
+ uri's scheme determines the config property (fs.SCHEME.impl) naming
+
+ the FileSystem implementation class. The uri's authority is used to
+
+ determine the host, port, etc. for a filesystem.</description>
+
+</property>
+
+

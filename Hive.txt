@@ -1,0 +1,55 @@
+
+
+hive> LOAD DATA LOCAL INPATH './examples/files/kv1.txt' OVERWRITE INTO TABLE pokes;
+
+hive> SELECT a.foo FROM invites a WHERE a.ds='2008-08-15';
+
+hive> INSERT OVERWRITE DIRECTORY '/tmp/hdfs_out' SELECT a.* FROM invites a WHERE a.ds='2008-08-15';
+
+hive> FROM invites a INSERT OVERWRITE TABLE events SELECT a.bar, count(*) WHERE a.foo > 0 GROUP BY a.bar;
+hive> INSERT OVERWRITE TABLE events SELECT a.bar, count(*) FROM invites a WHERE a.foo > 0 GROUP BY a.bar;
+
+hive> FROM pokes t1 JOIN invites t2 ON (t1.bar = t2.bar) INSERT OVERWRITE TABLE events SELECT t1.bar, t1.foo, t2.foo;
+
+
+CREATE TABLE u_data (
+  userid INT,
+  movieid INT,
+  rating INT,
+  unixtime STRING)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE;
+
+wget http://files.grouplens.org/datasets/movielens/ml-100k.zip
+curl --remote-name http://files.grouplens.org/datasets/movielens/ml-100k.zip
+
+unzip ml-100k.zip
+LOAD DATA LOCAL INPATH '<path>/u.data' OVERWRITE INTO TABLE u_data;
+
+SELECT COUNT(*) FROM u_data;
+
+Create weekday_mapper.py
+
+CREATE TABLE u_data_new (
+  userid INT,
+  movieid INT,
+  rating INT,
+  weekday INT)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t';
+
+add FILE weekday_mapper.py;
+
+INSERT OVERWRITE TABLE u_data_new
+SELECT
+  TRANSFORM (userid, movieid, rating, unixtime)
+  USING 'python weekday_mapper.py'
+  AS (userid, movieid, rating, weekday)
+FROM u_data;
+
+SELECT weekday, COUNT(*) FROM u_data_new GROUP BY weekday;
+
+
+
+
