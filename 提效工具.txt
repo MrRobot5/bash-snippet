@@ -1,0 +1,13 @@
+
+Snipaste-2.8.3-Beta-x64
+
+tinytask
+
+Tampermonkey®
+
+java-snippet
+
+python-snippet
+
+javascript-snippet
+

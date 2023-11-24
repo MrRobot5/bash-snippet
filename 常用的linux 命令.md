@@ -38,12 +38,26 @@ find ./Java -size +10240k -name '*.dll' > tmp.txt
 
 ## npm
 
+### nodeJs
+
 ```bash
  # demo 工程一条龙 🎯
  git clone -b sample-distance-matrix https://github.com/googlemaps/js-samples.git
  cd js-samples
  npm i
  npm start
+```
+
+### vue-cli
+
+```bash
+# 安装
+npm install -g @vue/cli
+创建一个项目
+vue create my-project
+# 启动服务
+cd my-project
+npm run serve
 ```
 
 ## git
