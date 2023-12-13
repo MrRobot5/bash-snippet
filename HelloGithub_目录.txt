@@ -1,0 +1,992 @@
+C:\Programs\Java\jdk1.8.0_291\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.4\lib\idea_rt.jar=60971:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.4\bin" -Dfile.encoding=UTF-8 -classpath C:\Programs\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\deploy.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\access-bridge-64.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\cldrdata.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\dnsns.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\jaccess.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\jfxrt.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\localedata.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\nashorn.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\sunec.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\sunjce_provider.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\sunmscapi.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\sunpkcs11.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\zipfs.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\javaws.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\jfxswt.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\management-agent.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\plugin.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\rt.jar;D:\github\java-snippet\okhttp\target\classes;D:\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;D:\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;D:\repository\com\alibaba\fastjson\1.2.7\fastjson-1.2.7.jar;D:\repository\org\slf4j\slf4j-api\1.7.13\slf4j-api-1.7.13.jar;D:\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;D:\repository\com\google\guava\guava\18.0\guava-18.0.jar;D:\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;D:\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;D:\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;D:\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;D:\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;D:\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;D:\repository\cn\hutool\hutool-all\4.1.14\hutool-all-4.1.14.jar;D:\repository\org\apache\poi\poi\3.17\poi-3.17.jar;D:\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;D:\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;D:\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;D:\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;D:\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;D:\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;D:\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;D:\repository\org\apache\commons\commons-email\1.4\commons-email-1.4.jar;D:\repository\com\sun\mail\javax.mail\1.5.2\javax.mail-1.5.2.jar;D:\repository\javax\mail\mail\1.4.7\mail-1.4.7.jar;D:\repository\org\jfree\jfreechart\1.0.19\jfreechart-1.0.19.jar;D:\repository\org\jfree\jcommon\1.0.23\jcommon-1.0.23.jar;D:\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;D:\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;D:\repository\tk\mybatis\mapper\3.4.2\mapper-3.4.2.jar;D:\repository\javax\persistence\persistence-api\1.0\persistence-api-1.0.jar;D:\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;D:\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;D:\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;D:\repository\org\xerial\snappy\snappy-java\1.0.5.4\snappy-java-1.0.5.4.jar;D:\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;D:\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;D:\repository\org\javassist\javassist\3.13.0-GA\javassist-3.13.0-GA.jar;D:\repository\cglib\cglib-nodep\2.2\cglib-nodep-2.2.jar;D:\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;D:\repository\junit\junit\4.8.2\junit-4.8.2.jar com.foo.example.Crawler /export/data https://mp.weixin.qq.com/s/nacBCiS-xXqg2u0_clINaQ
+200: https://mp.weixin.qq.com/s/nacBCiS-xXqg2u0_clINaQ (network: 200 over h2)
+1.1 JNDI 注入测试工具：JNDI-Injection-Exploit
+1.2 Apache Log4j 远程代码执行：CVE-2021-44228-Apache-Log4j-Rce
+2.1 塞尔达传说·时之笛反编译：oot
+2.2 终端模拟器：Tabby
+2.3 反向词典：WantWords
+2.4 CPU 性能分析和调优：perf-book
+2.5 高性能 Rust Runtime：Monoio
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247511132&idx=1&sn=414f5904391bfdd409147452025458b3&scene=21 (network: 200 over h2)
+1.1 去中心化操作系统：SnarkOS
+1.2 Swift 小手册：SwiftPamphletApp
+2.1 人像优化：GFPGAN
+2.2 清华计算机课程攻略：REKCARC-TSC-UHT
+2.3 Web 开发路线：developer-roadmap
+2.4 免费书籍：free-programming-books
+2.5 轻量级搜索引擎：zinc
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247511091&idx=1&sn=7ab7a5d7decb7f2138b2a2d1a0808787&scene=21 (network: 200 over h2)
+1.1 分布式系统模式：patterns-of-distributed-systems
+1.2 物理渲染引擎：Filament
+2.1 照片动漫化：AnimeGANv2
+2.2 可视化数据：scientific-visualization-book
+2.3 手绘风画图工具：tldraw
+2.4 云系统：CasaOS
+2.5 无损压缩：qoi
+你的点单
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247510998&idx=1&sn=31487d2d7710cff2511d5a22dd20eb71&scene=21 (network: 200 over h2)
+1.1 跑在任务栏的猫：RunCat_for_windows
+1.2 练手小项目：python-mini-projects
+2.1 人脸、肢体跟踪：kalidokit
+2.2 覆盖网络工具：Nebula
+2.3 modal 编辑器：helix
+2.4 .NET 跨平台 UI 框架：maui
+2.5 实用脚本和 patterns：useful-sed
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247511028&idx=1&sn=974a5d029b0d9fddd4a6114add6b9900&scene=21 (network: 200 over h2)
+1.1 平铺窗口管理器：yabai
+1.2 Notion 代替品：focalboard & appflowy
+2.1 低代码平台：Budibase
+2.2 实时数据治理：DataHub
+2.3 图像修复：SwinIR
+2.4 Docker 跑 macOS：Docker-OSX
+2.5 广告拦截：AdGuard Home
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247510960&idx=1&sn=a3d19fcb51dbbb0b6d1a527e7dece3a4&scene=21 (network: 200 over h2)
+1.1 代码自动补全 Copilot 使用指南：copilot-docs
+1.2 Flutter·黑魔法：flutter-tips-and-tricks
+2.1 高性能 SQL 数据库：QuestDB
+2.2 即时通讯解决方案：Open-IM-Server
+2.3 膳食管理：recipes
+2.4 实用 .gitignore 文件模版：gitignore
+2.5 游戏分析器：Optick
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247510801&idx=1&sn=787a22f5629e1330b18355a4251ddb7c&scene=21 (network: 200 over h2)
+1.1 PD 启动器：PD Runner
+1.2 代码 bug 检测器：control-flag
+2.1 通知工具：notifire
+2.2 钓鱼工具箱：zphisher
+2.3 JSON 解析器：simdjson
+2.4 多目标跟踪：ByteTrack
+2.5 Designing Data-Intensive Application 中文版：ddia
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247510109&idx=1&sn=2bb2275f88af0ee1c45b2685daba2534&scene=21 (network: 200 over h2)
+1.1 短信转发：SmsForwarder
+1.2 代码混淆：javascript-obfuscator
+2.1 Spotify 音乐下载器：ZSpotify
+2.2 x86 模拟器：v86
+2.3 AWS 可替代品：m3o
+2.4 K8s 配置信息守卫：Datree
+2.5 安全网关：APISIX
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247509941&idx=1&sn=411b211339db859d5a91f8fd31c948f3&scene=21 (network: 200 over h2)
+1.1 机械臂：Dummy-Robot
+1.2 初学者的 data science 教程：Data-Science-For-Beginners
+2.1 新编程语言：Peregrine
+2.2 资源监控：uptime-kuma
+2.3 AI 音乐项目：Muzic
+2.4 后端服务：appwrite
+2.5 容器 runtime：Youki
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247509698&idx=1&sn=ae4908169171e80db87d6a4f8909dbe8&scene=21 (network: 200 over h2)
+1.1 Switch 固件：Atmosphere
+1.2 图解 React 源码：react-illustration-series
+2.1 Python 小技巧：python-mini-projects
+2.2 开源日历：calendso
+2.3 AI 量化：Qlib
+2.4 备份工具：restic
+2.5 单点登录：authelia
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247509742&idx=1&sn=d7ce0ec8819ed081d3327b632582aa58&scene=21 (network: 200 over h2)
+1.1 真·代码库：codebases
+1.2 实时高清抠图：RobustVideoMatting
+2.1 时序智能库：Merlion
+2.2 资源监控：btop
+2.3 一键关注：LinkFree
+2.4 动画设计：theatre
+2.5 workload orchestrator 工具：Nomad
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247509528&idx=1&sn=4655c875b7a3e3ed2fbc3c8301da6655&scene=21 (network: 200 over h2)
+1.1 人生重开模拟器：lifeRestart
+1.2 运行在 Docker 中的 GUI：x11docker
+2.1 OCI、POD 管理工具：Podman
+2.2 人脸修复：GFPGAN
+2.3 地图绘制：prettymaps
+2.4 自动补全：autocomplete
+2.5 数据库 TUI：termdbms
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247509620&idx=1&sn=268c60ff5b511b6a5bc34779fa575182&scene=21 (network: 200 over h2)
+1.1 C语言教程：clang-tutorial
+1.2 Changelog 生成器：git-cliff
+2.1 RPC 框架：kitex
+2.2 ML 夏令营：mlbookcamp-code
+2.3 Java 写个塔防游戏：Mindustry
+2.4 投屏工具：Macast
+2.5 TUI 数据库管理器：gobang
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247509232&idx=1&sn=63460e13cd71620af024dd48723e0bb1&scene=21 (network: 200 over h2)
+1.1 AI 拟声：Realtime-Voice-Clone-Chinese
+1.2 图片转 Latex 代码：image-to-latex
+2.1 一起读论坛：papers-we-love
+2.2 Go 程序安全检测：GoKart
+2.3 美化终端：NvChad
+2.4 流量编排：easegress
+2.5 好用的 watch 命令：viddy
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247509424&idx=1&sn=4cf11e75c1eb74dc931485bc2605554c&scene=21 (network: 200 over h2)
+1.1 可用脚本集：faker2
+1.2 Python SQL 数据库连接器：SQLModel
+2.1 C++ 必读库：folly
+2.2 免广告的 Google 搜索：whoogle-search
+2.3 Linux 内核编程指南：lkmpg
+2.4 定时任务管理器：qinglong
+2.5 K8s 部署检测工具：kubescape
+文末点单——微信记录导出
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247509107&idx=1&sn=41609259c44308a153cdd1dfe1d25909&scene=21 (network: 200 over h2)
+1.1 Unix 命令替代品：modern-unix
+1.2 数据管理工具：datafuse
+2.1 协作地图：mapus
+2.2 AI 小助手：rasa
+2.3 Java 训练营：DSA-Bootcamp-Java
+2.4 Electron 工具箱：rubick
+2.5 抓包神器：mitmproxy
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247509163&idx=1&sn=e000fa6ed53213c7d8de64d9d839d745&scene=21 (network: 200 over h2)
+1.1 反向面试：reverse-interview-zh
+1.2 Python 终端框架：Textual
+2.1 Babel 相似品：swc
+2.2 兼容 iOS：PlayCover
+2.3 全员上云：localstack
+2.4 魔改 sqlite3：absurd-sql
+2.5 程序画鱼：fishdraw
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247508905&idx=1&sn=3db95f967eb6bf05a07ff45fe75e1750&scene=21 (network: 200 over h2)
+1.1 移动检验工具包：mtv
+1.2 制作可启动 U 盘工具：Ventoy
+2.1 Python 游乐园：learn-python
+2.2 源码猎人：source-code-hunter
+2.3 制作数学动画：manim
+2.4 做个聊天软件：chat
+2.5 页面端的 Windows 11：windows11
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247508994&idx=1&sn=b768d9bec40b56886f97e72223fb6be0&scene=21 (network: 200 over h2)
+1.1 GPS 自行车码表：X-TRACK
+1.2 macOS 虚拟机：macos-virtualbox
+2.1 目标检测：YOLOX
+2.2 50 个前端练手小项目：50 Projects in 50 Days
+2.3 数据可视化工具：dataease
+2.4 React 应用构建：Bulletproof React
+2.5 实习合集：Summer2022-Internships
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247508773&idx=1&sn=b3a760ef12f25f2e5880f465a2cfb59f&scene=21 (network: 200 over h2)
+1.1 万物皆可容器化：earthly
+1.2 预测蛋白质结构：alphafold
+2.1 Go 食用指南：go-recipes
+2.2 Java 权限认证：Sa-Token
+2.3 手持编程书的漫画女孩：Anime-Girls-Holding-Programming-Books
+2.4 macOS 装机必备：awesome-mac
+2.5 开源字体：LxgwWenKai
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247508619&idx=1&sn=61d70b0579cb08d0cc84c6e46ef14fb9&scene=21 (network: 200 over h2)
+1.1 不只是 Netflix：Fakeflix
+1.2 脑图学 Linux：Psyduck
+2.1 前端练习项：50projects50days
+2.2 命令行文件共享：transfer.sh
+2.3 开源健康度：scorecard
+2.4 Windows 密码获取：mimikatz
+2.5 IoT 微软教程：IoT-For-Beginners
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247508526&idx=1&sn=2309da1b9115376d219403d62299200d&scene=21 (network: 200 over h2)
+1.1 监控工具：signoz
+1.2 SRE 指南：howtheysre
+2.1 devops 练习：devops-exercises
+2.2 高效并行策略：mesh-transformer-jax
+2.3 安全私有网络：wiretrustee
+2.4 微软机器学习课：ML-For-Beginners
+2.5 树莓派路由器：internet-pi
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247508410&idx=1&sn=93d58ea6305bbab50000c6f3cea93dca&scene=21 (network: 200 over h2)
+1.1 离线地图：organicmaps
+1.2 技术合集：The-Complete-FAANG-Preparation
+2.1 AI 斗地主：DouZero
+2.2 电脑控制手机：scrcpy
+2.3 自动化工作流：n8n
+2.4 终端 PPT：slides
+2.5 Windows 11 检测仪：WhyNotWin11
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247508289&idx=1&sn=ad143a29f0fb74598ef4cf52b1018e4b&scene=21 (network: 200 over h2)
+1.1 文本识别：pyWhat
+1.2 新的建站方式：astro
+2.1 加点数据：AugLy
+2.2 零代码构建内部工具：ToolJet
+2.3 智能镜子：MagicMirror
+2.4 新型 shell：nushell
+2.5 面向教师的会议视频工具：nettu-meet
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247507895&idx=1&sn=3fd4f039a808637b6f7eee523d5813f2&scene=21 (network: 200 over h2)
+1.1 自行车自动驾驶：XUAN-Bike
+1.2 macOS 开发环境自动化：mac-dev-playbook
+1.3 高考作文写作：EssayKiller_V2
+2.1 金庸群侠传 3D 重制版：jynew
+2.2 Python GUI 界面帮手：Tkinter-Designer
+2.3 搜索即服务：jina
+2.4 Infra 即 Code：terraform
+2.5 文档工具：docz
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247507780&idx=2&sn=7773e1ab5c4c7286aa5d75d7bc2e1a73&scene=21 (network: 200 over h2)
+1.1 70 行代码 Pokeman：pokegb
+1.2 Android 脱壳工具：BlackDex
+2.1 Windows 包管理搭档：winget-pkgs
+2.2 感受 90s 的操作系统画风：serenity
+2.3 换脸工具：faceswap
+2.4 改造火狐 UI：Firefox-UI-Fix
+2.5 浏览器中的终端：gotty
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247507081&idx=2&sn=b78cfce2ec5073c5178b38dcd727443a&scene=21 (network: 200 over h2)
+前端低代码：amis
+1.1 浏览器上的 vscode：code-server
+1.2 直播服务：livego
+2.1 数据恢复：airbyte
+2.2 腾讯·安全编码：secguide
+2.3 终端提示：autocomplete
+2.4 Steam 射击游戏：SNKRX
+2.5 数据库变表格：nocodb
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247506886&idx=1&sn=b4152849fd9f672fee75f677fb48274d&scene=21 (network: 200 over h2)
+1.1 物品追踪：openhaystack
+1.2 文字提取：macOCR
+2.1 网络电视：iptv
+2.2 后端服务器：appwrite
+2.3 资源大合集：awesome-python
+2.4 高颜值 ERP：erpnext
+2.5 网站流量统计：umami
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247506748&idx=1&sn=51ff4cb8540a1d19056db0218e079641&scene=21 (network: 200 over h2)
+1.1 云空调：air-conditioner
+1.2 真·手把手教你刷题：leetcode-master
+2.1 远程桌面客户端：rustdesk
+2.2 视频服务：SRS
+2.3 文件同步：syncthing
+2.4 高颜值管理仪表盘：Flutter-Responsive-Admin-Panel-or-Dashboard
+2.5 macOS 子系统 Linux：Lima
+3.1 极简 GUI 库：PySimpleGUI
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247506526&idx=1&sn=4d46605f94b6791d4d59464cae0c39ee&scene=21 (network: 200 over h2)
+1.1 Markdown 方式做 PPT：slidev
+1.2 写出更好脚本：zx
+2.1 程序员必马清单：Best-websites-a-programmer-should-visit
+2.2 自动驾驶：openpilot
+2.3 跨平台 UI 工具包：ionic-framework
+2.4 可视化数据分析：thinking-in-data
+2.5 console 命令备忘录：tldr
+3.1 跨平台文件互传：Syncthing & croc
+3.2 图片识别：faceai
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247506332&idx=1&sn=85ea4fbd91d53759cb36879db72caa4b&scene=21 (network: 200 over h2)
+1.1 手把手教你做 3D 游戏：3d-game-shaders-for-beginners
+1.2 写个操作系统：rust-raspberrypi-OS-tutorials
+2.1 Python 函数秒变微服务：opyrator
+2.2 终端命令校对器：thefuck
+2.3 HTML5 窗口管理器：winbox
+2.4 Firebase 替代品：supabase
+2.5 JS 代码整洁之道：clean-code-javascript
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247504133&idx=2&sn=c1df3bdb27264fb7a78743ae17572b1f&scene=21 (network: 200 over h2)
+1.1 高颜值实时监控：netdata
+1.2 在 Windows 上用 Linux GUI：WSLg
+2.1 淘系前端互动引擎：eva.js
+2.2 智能相片管理器：phototopism
+2.3 渲染引擎：kraken
+2.4 几何三角图片生成器：triangula
+2.5 C++ 编写的机器学习库：flashlight
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247503909&idx=1&sn=4587e7f374e2d44eb6590999181f26f5&scene=21 (network: 200 over h2)
+1.1 阿里味编程语言：pua-lang
+1.2 文本生成语音：TTS
+2.1 日历管理工具：calendso
+2.2 一人公司方法论：one-person-businesses-methodology
+2.3 kv 存储数据库：leveldb
+2.4 反向代理：reproxy
+2.5 磁盘挖矿：chia-blockchain
+2.6 内网扫描工具：fscan
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247503701&idx=1&sn=9819de3d23d6e084c5de190c80e4ed88&scene=21 (network: 200 over h2)
+1.1 定义自己的终端：lipgloss
+1.2 Node.js 样板文件 ：node-express-boilerplate
+2.1 大型系统的学习资料：awesome-scalability
+2.2 语音压缩编解码器：lyra
+2.3 Apple 开源数据包：Swift Collections
+2.4 Arch Linux 安装工具：archinstall
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247502322&idx=1&sn=8e6d504af878f0ab4f9a8b7d16752526&scene=21 (network: 200 over h2)
+1.1 文字变图片：deep-daze
+1.2 新冠 mRNA 序列 ：Assemblies-of-putative-SARS...
+2.1 权限认证框架：sa-token
+2.2 监控 DNS 查询：dnspeep
+2.3 个人任务管理器：grit
+2.4 可视化开发：appsmith
+2.5 数据序列化协议：protobuf
+3.1 跨平台同步：syncthing
+3.2 自己的 Google Drive：MyDrive
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247502226&idx=1&sn=6960179d9de129eff23ea36d487f226e&scene=21 (network: 200 over h2)
+1.1 神奇的图片：tweetable-polyglot-png
+1.2 看板任务管理工具：focalboard
+2.1 加密交易框架：Jesse
+2.2 程序员的烹饪方式：based.cooking
+2.3 客服系统：papercups
+2.4 macOS 脚本窗：xbar
+2.5 压测工具：wrk
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247500256&idx=1&sn=d5c16ce972581d893dd8fb2ce92fd6db&scene=21 (network: 200 over h2)
+1.1 Switch 模拟器：Ryujinx
+1.2 电话号码 OSINT 工具：PhoneInfoga
+2.1 好用的 Bloomberg 终端：GamestonkTerminal
+2.2 当个万星 Star 贡献者：first-contributions
+2.3 文件管理：dotfiles
+2.4 脚本静态分析：shellcheck
+2.5 GitHub 图片加速：GitHub520
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247500113&idx=2&sn=45545f91291284a44b00d85aa24f3648&scene=21 (network: 200 over h2)
+1.1 图片转 csv 文件：image2csv
+1.2 史上最强拷贝仓：Clone-Wars
+2.1 单点登录守卫：authelia
+2.2 Flutter 聊天应用：Chat-Messaging-App-Light-and-Dark-Theme
+2.3 敏感信息扫描工具：apkleaks
+2.4 新型 shell：nushell
+2.5 深度学习资料：d2l-zh
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247500113&idx=2&sn=45545f91291284a44b00d85aa24f3648&chksm=9058740fa72ffd1937b776f383fab8983d7440b5b0d0008de8f14140e8782d1bbe996ca991be&scene=21 (network: 200 over h2)
+1.1 图片转 csv 文件：image2csv
+1.2 史上最强拷贝仓：Clone-Wars
+2.1 单点登录守卫：authelia
+2.2 Flutter 聊天应用：Chat-Messaging-App-Light-and-Dark-Theme
+2.3 敏感信息扫描工具：apkleaks
+2.4 新型 shell：nushell
+2.5 深度学习资料：d2l-zh
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247499231&idx=1&sn=fea45f4745b3ff27ff8222353add61e7&chksm=90584881a72fc197e5a8b71e0f8a02f89117cd8bfdc2e8e6b690e10149b0bad97ed578366fb8&scene=21 (network: 200 over h2)
+1.1 经典游戏再现：basic-computer-games
+1.2 终端看视频：ytfzf
+2.1 好玩的文字流程图：flowchart-fun
+2.2 性能分析：pyroscope
+2.3 图像处理集成：PaddleGAN
+2.4 Git 版数据库：dolt
+2.5 构建跨平台应用：svelte-nodegui
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247498957&idx=2&sn=3a80c1f3a13bb355754804a924de01ed&chksm=90584993a72fc0856e98209c10d229fc149a25909b147fa8a1536b0dc2de781701033384dcde&scene=21 (network: 200 over h2)
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247496827&idx=1&sn=fe3e687ac0f0cd45fbd199b94d0d207a&chksm=90584125a72fc83308fdcaec25d631148e91ffc4e15c6cfe6c9df15c4eba1dbe74f1d31787e8&scene=21 (network: 200 over h2)
+1.1 终端马里奥：miro
+1.2 又一个社交分析工具：social-analyzer
+2.1 新的链接器：mold
+2.2 Python 备忘录：python-cheatsheet
+2.3 Google 开源 ML 框架：model_search
+2.4 函数式编程：mostly-adequate-guide
+2.5 一次编译随意运行：Cosmopolitan
+1.1 容器保密：Deepfence SecretScanner
+1.2 代码阅读器：Sourcetrail
+2.1 Zig 学习之旅：ziglings
+2.2 截图软件：flameshot
+2.3 微服务构建：Dapr
+2.4 机器学习数据集管理：Hub
+2.5 NASA 开源的飞行源码：F´ (F Prime)
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247496770&idx=1&sn=d99d9d0beb8f903d7ad7ab50ef045cca&chksm=9058411ca72fc80a8d25c7f0c61c17b0042efe5c7c7e2a536c096f2384291747a14c2d47e38b&scene=21 (network: 200 over h2)
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247496659&idx=1&sn=2d20555e0be8c46db9acbe259f678524&chksm=9058468da72fcf9bdd28144f17cc216e10244390afb9c2a69c240a8653c651b0be275e0abae4&scene=21 (network: 200 over h2)
+1.1 键入记忆：qwerty-learner
+1.2 编程式视频：remotion
+2.1 爬虫工具箱：InfoSpider
+2.2 逆向工程：re3
+2.3 语音聊天：DogeHouse
+2.4 密钥管理：vault
+2.5 VS Code 秒变 GitHub：github1s
+1.1 快速获取 Wi-Fi 密码：wifi-password
+1.2 系统学 DataScience：Learn-Datascience-For-Free
+2.1 软件逆向：Ghidra @小王每天11点就睡就好了
+2.2 文本转手写体：text-to-handwriting @酸去羟基醇去氢
+2.3 写字机器人：nao_writing @酸去羟基醇去氢
+3.1 单测帮手：testable-mock
+3.2 终端炒股：ticker
+3.3 带你玩 Laravel：Laravel Tips
+3.4 原生 MAC API：MacDriver
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247496460&idx=1&sn=0e0db2548ab7cf7265e81893c8d41562&chksm=90584652a72fcf44409d71f436f8f8089089ae280d634e80e8c4420154909328faef3f660b74&scene=21 (network: 200 over h2)
+1.1 透明小电视：HoloCubic
+1.2 Raspberry Pi Pico 套件：pico-sdk
+2.1 量化交易：Kungfu
+2.2 AI 量化架构：Qlib
+3.1 食物讲解设计模式：design-patterns-explained-with-food
+3.2 多端显示：Deskreen
+3.3 可视化脚本：Ryven
+3.4 大数据福音：airbyte
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247494740&idx=2&sn=55b155a246f4cd79e285c649970ca3d6&chksm=9058590aa72fd01ccedce3f9150ff188db82dec6477bac822600f57c26b63bd5144afd37f3f8&scene=21 (network: 200 over h2)
+1.1 命名秘籍：naming-cheatsheet
+1.2 机器学习库：best-of-ml-python
+2.1 免费编程书籍：free-programming-books
+2.2 大厂的技术实践：applied-ml
+2.3 新的编译方式：Svelte
+2.4 可视化工具：superset
+2.5 模拟数据：faker.js
+2.6 角色扮演：ActionRoguelike
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247494535&idx=1&sn=0cfdc2c8a1c160597cd452892bae72b7&chksm=90585ed9a72fd7cf9e1cc7b4cd4f7bbd5e5e999f19a163b6ec34c15be3d7b4a87d63f9cb9192&scene=21 (network: 200 over h2)
+1.1 摆脱 996：coder2gwy
+1.2 上海买房攻略：shanghai_house_knowledge
+2.1 三十天入门到精通系列：30-Days-Of-Python
+2.2 从零开始写个操作系统：os-tutorial
+3.1 分布式 POSIX 文件系统：JuiceFS
+3.2 文件资源管理器：Files
+3.3 无代码开发 Node.js：Amplication
+3.4 流程图代码生成器：imove
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247494284&idx=1&sn=eb741cd495c4ad3b582b09bf8f9f4ddd&chksm=90585fd2a72fd6c48aae11980694fc631573ab3acc41d8bbf7fde6cbb4b2bcc17926df62461d&scene=21 (network: 200 over h2)
+1.1 浏览器标签管理器：TabFS
+1.2 源码合集：500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code
+2.1 Linux 隐私保护：Whoami
+2.2 手把手教你学 JS：30-Days-Of-JavaScript
+2.3 WebAssembly 好搭档：Wasmer
+2.4 Docker 最佳实践：Dockerfile
+2.5 安全通信：Signal
+2.6 Go 技能提升：high-performance-go
+2.7 编程实践列表：Projects
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247494175&idx=1&sn=83567e29ff473c17fcd339cb91369d05&chksm=90585f41a72fd657761eea32f39ea3c7b113ee35e52012b507b77cf258e3bce27f4b5fd2d782&scene=21 (network: 200 over h2)
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247494175&idx=1&sn=83567e29ff473c17fcd339cb91369d05&scene=21 (network: 200 over h2)
+1.1 记在照片里的生活：PhotoPrism
+1.2 逆向课程：Reverse-Engineering-Tutorial
+2.1 HTTP 页面监控器：bash-http-monitoring
+2.2 Java 字节码编辑器：Recaf
+2.3 交易机器人：Freqtrade
+2.4 游戏办公：Work Adventure
+2.5 资料搜集：social-analyzer
+2.6 预训练模型：DeiT
+2.7 了不起的自托管服务：awesome-selfhosted
+1.1 记在照片里的生活：PhotoPrism
+1.2 逆向课程：Reverse-Engineering-Tutorial
+2.1 HTTP 页面监控器：bash-http-monitoring
+2.2 Java 字节码编辑器：Recaf
+2.3 交易机器人：Freqtrade
+2.4 游戏办公：Work Adventure
+2.5 资料搜集：social-analyzer
+2.6 预训练模型：DeiT
+2.7 了不起的自托管服务：awesome-selfhosted
+
+C:\Programs\Java\jdk1.8.0_291\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.4\lib\idea_rt.jar=62466:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.4\bin" -Dfile.encoding=UTF-8 -classpath C:\Programs\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\deploy.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\access-bridge-64.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\cldrdata.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\dnsns.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\jaccess.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\jfxrt.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\localedata.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\nashorn.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\sunec.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\sunjce_provider.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\sunmscapi.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\sunpkcs11.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\zipfs.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\javaws.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\jfxswt.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\management-agent.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\plugin.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\rt.jar;D:\github\java-snippet\okhttp\target\classes;D:\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;D:\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;D:\repository\com\alibaba\fastjson\1.2.7\fastjson-1.2.7.jar;D:\repository\org\slf4j\slf4j-api\1.7.13\slf4j-api-1.7.13.jar;D:\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;D:\repository\com\google\guava\guava\18.0\guava-18.0.jar;D:\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;D:\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;D:\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;D:\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;D:\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;D:\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;D:\repository\cn\hutool\hutool-all\4.1.14\hutool-all-4.1.14.jar;D:\repository\org\apache\poi\poi\3.17\poi-3.17.jar;D:\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;D:\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;D:\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;D:\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;D:\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;D:\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;D:\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;D:\repository\org\apache\commons\commons-email\1.4\commons-email-1.4.jar;D:\repository\com\sun\mail\javax.mail\1.5.2\javax.mail-1.5.2.jar;D:\repository\javax\mail\mail\1.4.7\mail-1.4.7.jar;D:\repository\org\jfree\jfreechart\1.0.19\jfreechart-1.0.19.jar;D:\repository\org\jfree\jcommon\1.0.23\jcommon-1.0.23.jar;D:\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;D:\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;D:\repository\tk\mybatis\mapper\3.4.2\mapper-3.4.2.jar;D:\repository\javax\persistence\persistence-api\1.0\persistence-api-1.0.jar;D:\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;D:\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;D:\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;D:\repository\org\xerial\snappy\snappy-java\1.0.5.4\snappy-java-1.0.5.4.jar;D:\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;D:\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;D:\repository\org\javassist\javassist\3.13.0-GA\javassist-3.13.0-GA.jar;D:\repository\cglib\cglib-nodep\2.2\cglib-nodep-2.2.jar;D:\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;D:\repository\junit\junit\4.8.2\junit-4.8.2.jar com.foo.example.Crawler /export/data "https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247493967&idx=1&sn=5da9bbf93ecfa5c069292d207bcede18&chksm=90585c11a72fd507b5c42cde86d7c65cccf5226f6c7229db37fd34a3f0c3aba0e798010bc1f0&cur_album_id=1332112026222641153&scene=189#wechat_redirect"
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247493967&idx=1&sn=5da9bbf93ecfa5c069292d207bcede18&chksm=90585c11a72fd507b5c42cde86d7c65cccf5226f6c7229db37fd34a3f0c3aba0e798010bc1f0&cur_album_id=1332112026222641153&scene=189#wechat_redirect (network: 200 over h2)
+1.1 AI 论文年度盘点：Best_AI_paper_2020
+1.2 线条肖像：ArtLine
+2.1 分布式 KV 数据库：Tendis
+2.2 存储引擎：TerarkDB
+2.3 专属视频直播：owncast
+2.4 macOS 开发工具集：DevUtils-app
+2.5 3D 游戏引擎：FlaxEngine
+2.6 设备间数据传输：piping-server
+2.7 强中更有强中手：imgdiff
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247492982&idx=1&sn=0980b9bed13c449583ccc7443ad2c4d2&chksm=90585028a72fd93e5da1806ed628fcc65ef6390b2423d95cd4b92e6f3ebd7ee54c9d48cb46bb&scene=21 (network: 200 over h2)
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247493552&idx=1&sn=a6a82879ba6f687aa89cecf8ad1676c9&chksm=905852eea72fdbf82a5bd6c0a1feca8d44d4cbd4a9487b92a40bd4d0bf8d974c3b9833edd850&scene=21 (network: 200 over h2)
+1.1 周获 3k+ star 十六进制编辑器：ImHex
+1.2 马赛克密码还原：Depix
+2.1 Firebase 替代品：Supabase
+2.2 晋升之法：school-of-sre
+2.3 重新体验 Laravel：Sail
+2.4 README 小把戏：css-in-readme-like-wat
+2.5 引起公愤的微软：ms-teams-rce
+2.6 时序可视化：PlotJuggler
+2.7 现代 JS 教程：en.javascript.info
+1.1 音频好搭档：kbd-audi
+1.2 在线抠图神器：BackgroundMattingV2
+2.1 超强 PS1 模拟器：Duckstation
+2.2 另类云基础设施的管理方法：cloudquery
+2.3 Google 加密库：Mundane
+2.4 SSH 教程：ssh-tutorial
+2.5 拯救 2077：PerformanceOverhaulCyberpunk
+2.6 浏览器版 Airdrop：Snapdrop
+2.7 强中更有强中手：imgdiff
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247492615&idx=1&sn=2cc80c951b986567158f863f988a703b&chksm=90585159a72fd84f7a441efd120932cf65048136f1a0cc802589c77d40e87587b8a8b57e4d64&scene=21 (network: 200 over h2)
+1.1 手机变显示器：HDMI-PI
+1.2 广告屏蔽小能手：Pi-hole
+2.1 浏览器桌面：x
+2.2 NLP 论文超全合集：ABigSurvey
+2.3 蠕虫病毒：Neurax
+2.4 跨设备 cv：pbgopy
+2.5 图库版 youtube-dl：gallery-dl
+2.6 应用 Killer：r0capture
+2.7 充电宝显示器：PocketLCD
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247492435&idx=1&sn=e7b221a30b9ac8ab2da5b80157454c43&chksm=9058560da72fdf1b26c98e4f9c053909c5c6548bb0577e2ee77b9db5a6ceefa0d07e35ddeb16&scene=21 (network: 200 over h2)
+1.1 相片变肖像画：U^2-Net
+1.2 开源数据平台：Directus
+2.1 轻量级目标检测：NanoDet
+2.2 抓取短链接机密信息：urlhunter
+2.3 Flash Player 模拟器：Ruffle
+2.4 又一个网上商城系统：SuperMarket
+2.5 性能测试工具：k6
+2.6 小型深度学习框架：tinygrad
+2.7 前端低代码框架：amis
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247492152&idx=1&sn=e3dfdffc5484eec4d2273d7d902f03a7&chksm=90585766a72fde7001d60cd8a83a5c576c240bba51d5c47f4108fed7c55c07532f2b52b93e6f&scene=21 (network: 200 over h2)
+1.1 炸裂图像渲染引擎：Skija
+1.2 万 Shell 皆可用：starship
+2.1 另类 K8s：k0s
+2.2 超强屏幕录制和注释工具：Screenity
+2.3 大规模训练模型：CPM-Generate
+2.4 零编码，无配置：ObjectiveSQL
+2.5 轻量级 React 图表：beautiful-react-diagrams
+2.6 网站运行监控：upptime
+2.7 开发者免费：free-for-dev
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247491753&idx=1&sn=ac153429975f38638508219a06432175&chksm=905855f7a72fdce1225a94da5b112d1d76ca900f49f250335a4220d1582e1f7f8034f23b49e1&scene=21 (network: 200 over h2)
+1.1 JSON 数据检索：gron
+1.2 可视化 Ping：gping
+2.1 模拟数据：faker.js
+2.2 工具集：PowerToys
+2.3 微软开前端课：Web-Dev-For-Beginners
+2.4 图片重生：Bringing-Old-Photos-Back-to-Life
+2.5 逆向工程编辑器：rehex
+2.6 客服系统：chatwoot
+2.7 macOS Big Sur 升级：big-sur-micropatcher
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247491665&idx=1&sn=bf339f045d397e77350219cec38d8f8c&chksm=9058550fa72fdc19f27813f85e9eac341a25fde4ceb73f924e712bc0405cc4f2aefd17260749&scene=21 (network: 200 over h2)
+1.1 专业之旅：AI-Expert-Roadmap
+1.2 玩转 GO：Mastering_Go_ZH_CN
+2.1 这个安全工具有点秀：NAT Slipstreaming
+2.2 轻量级编辑器：Ox
+2.3 照片秒变 3D 模型：PIFuHD
+2.4 无线渗透套件：Pi-PwnBox-RogueAP
+2.5 可视化学算法：Algorithm Visualizer
+2.6 企业级服务器引擎：Workflow
+2.7 超微图标：SuperTinyIcons
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247491531&idx=1&sn=8c85e289d5807df82022c52a8d7a7a2e&chksm=905baa95a72c2383dde1a5c37a0ad429724f2f9a73b97e2b737d12f20119d352503aa6450755&scene=21 (network: 200 over h2)
+1.1 VSCode 的故事：vscode-stories
+1.2 ls 替代品：nat
+2.1 变天小工具：SkyAR
+2.2 跨社交平台寻人：sherlock
+2.3 强大 OCR 工具库：PaddleOCR
+2.4 UNIX/Linux 命令小抄：cheat.sh
+2.5 开心学数学：manim
+2.6 自动驾驶：openpilot
+2.7 API 构建器：hoppscotch
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247491025&idx=1&sn=21483029af34ac4e9da0a4a46612a0d7&chksm=905ba88fa72c219947e9996cb3703b48e7a99c6bc37b8eaa6f356948a7f9d16524a5d13448a9&scene=21 (network: 200 over h2)
+1.1 校招避雷：ShameCom
+1.2 恶意软件合集：MalwareSourceCode
+2.1 自动机器学习工具包：nni
+2.2 京东“外挂”：scripts
+2.3 攻击检测：Crowdsec
+2.4 SwiftUI macOS 状态监控：eul
+2.5 保护 ssh：Endlessh
+2.6 一流 GPU 生态：rust-gpu
+2.7 神速上手 C++：modern-cpp-tutorial
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247490781&idx=1&sn=c2a5968653796199cf1956817010e1f0&chksm=905ba983a72c2095140e3b5cb54ce475b502078758de12fc3f79b72ded777855d372ac5faa74&scene=21 (network: 200 over h2)
+1.1 免你记命令烦恼 Git CLI：Bit
+1.2 浏览器记录员：Headless recorder
+2.1 高颜值命令行渲染 Markdown 工具：Glow
+2.2 一键构建、部署发布工具：Waypoint
+2.3 全程工作合集：remote-jobs
+2.4 高颜值图片占位解决方案：BlurHash
+2.5 k8s 跑 Kafka：Strimzi
+2.6 类 Excel 开源表格：Luckysheet
+2.7 苹果开源 swift 算法：swift-algorithms
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247490497&idx=1&sn=0e9581b1fb8a62e69f2efe1a5f7fc474&chksm=905bae9fa72c2789875f5761ac215d9e337c2aeb7a859a3b16832ca371088273eb0315c2380b&scene=21 (network: 200 over h2)
+1.1 面向极客的极简命令行知识库管理器：kb
+1.2 极客风磁盘工具：Duf
+2.1 可视化组件集：Visx
+2.2 HTTP 工具包：Hetty
+2.3 打包压缩工具：esbuild
+2.4 Steam 图形游戏：shapez.io
+2.5 高可用 UI 组件：headlessui
+2.6 NLP 数据集：Datasets
+2.7 负载测试工具：ali
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247490545&idx=1&sn=ac7055417ee7e3cacdab6fdadd13edac&chksm=905baeafa72c27b9966127681e59424c3fe0c2204b5e874da176be0be7504d75e75a0d2c8130&scene=21 (network: 200 over h2)
+1.1 nb 的命令行工具：nb
+1.2 “人肉” Google 账号：GHunt
+2.1 不可显示的替代字体：last-resort-font
+2.2 亚马逊实验室交互工具：Diagram Maker
+2.3 从头开始学机器学习：ML-From-Scratch
+2.4 强化训练即服务：maro
+2.5 屏幕共享工具：server
+2.6 小型 C 编译器：chibicc
+2.7 GA 替代品：Plausible Analytics
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247489906&idx=1&sn=ed5d62f43ae4308856b536b8a75df8a9&chksm=905bac2ca72c253abe20b208dc037be7b9adb210047551048f7c9829eeb5a3b6e824b508af16&scene=21 (network: 200 over h2)
+1.1 日期工具：dayjs
+1.2 Payload 大全：Payloads All The Things
+2.1 目标检测：Mask R-CNN
+2.2 大型系统设计：system-design-primer
+2.3 超全电商系统：mall
+2.4 一键生成前后端代码：jeecg-boot
+2.5 强大网盘管理工具：Rclone
+2.6 高性能终端仿真器：Alacritty
+2.7 轻量级图片加载库：Kingfisher
+
+C:\Programs\Java\jdk1.8.0_291\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.4\lib\idea_rt.jar=65016:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.4\bin" -Dfile.encoding=UTF-8 -classpath C:\Programs\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\deploy.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\access-bridge-64.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\cldrdata.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\dnsns.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\jaccess.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\jfxrt.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\localedata.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\nashorn.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\sunec.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\sunjce_provider.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\sunmscapi.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\sunpkcs11.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\ext\zipfs.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\javaws.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\jfxswt.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\management-agent.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\plugin.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Programs\Java\jdk1.8.0_291\jre\lib\rt.jar;D:\github\java-snippet\okhttp\target\classes;D:\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;D:\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;D:\repository\com\alibaba\fastjson\1.2.7\fastjson-1.2.7.jar;D:\repository\org\slf4j\slf4j-api\1.7.13\slf4j-api-1.7.13.jar;D:\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;D:\repository\com\google\guava\guava\18.0\guava-18.0.jar;D:\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;D:\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;D:\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;D:\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;D:\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;D:\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;D:\repository\cn\hutool\hutool-all\4.1.14\hutool-all-4.1.14.jar;D:\repository\org\apache\poi\poi\3.17\poi-3.17.jar;D:\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;D:\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;D:\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;D:\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;D:\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;D:\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;D:\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;D:\repository\org\apache\commons\commons-email\1.4\commons-email-1.4.jar;D:\repository\com\sun\mail\javax.mail\1.5.2\javax.mail-1.5.2.jar;D:\repository\javax\mail\mail\1.4.7\mail-1.4.7.jar;D:\repository\org\jfree\jfreechart\1.0.19\jfreechart-1.0.19.jar;D:\repository\org\jfree\jcommon\1.0.23\jcommon-1.0.23.jar;D:\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;D:\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;D:\repository\tk\mybatis\mapper\3.4.2\mapper-3.4.2.jar;D:\repository\javax\persistence\persistence-api\1.0\persistence-api-1.0.jar;D:\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;D:\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;D:\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;D:\repository\org\xerial\snappy\snappy-java\1.0.5.4\snappy-java-1.0.5.4.jar;D:\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;D:\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;D:\repository\org\javassist\javassist\3.13.0-GA\javassist-3.13.0-GA.jar;D:\repository\cglib\cglib-nodep\2.2\cglib-nodep-2.2.jar;D:\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;D:\repository\junit\junit\4.8.2\junit-4.8.2.jar com.foo.example.Crawler /export/data "https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247489906&idx=1&sn=ed5d62f43ae4308856b536b8a75df8a9&chksm=905bac2ca72c253abe20b208dc037be7b9adb210047551048f7c9829eeb5a3b6e824b508af16&scene=21"
+200: https://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247489906&idx=1&sn=ed5d62f43ae4308856b536b8a75df8a9&chksm=905bac2ca72c253abe20b208dc037be7b9adb210047551048f7c9829eeb5a3b6e824b508af16&scene=21 (cache)
+1.1 日期工具：dayjs
+1.2 Payload 大全：Payloads All The Things
+2.1 目标检测：Mask R-CNN
+2.2 大型系统设计：system-design-primer
+2.3 超全电商系统：mall
+2.4 一键生成前后端代码：jeecg-boot
+2.5 强大网盘管理工具：Rclone
+2.6 高性能终端仿真器：Alacritty
+2.7 轻量级图片加载库：Kingfisher
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247489163&idx=1&sn=b78e9e648728f366e025492f140b3dc5&chksm=905ba3d5a72c2ac334973bb3abf1d8162a123ebebf049581b63f5e8c21a30dac33a3cd6a92e5&scene=21 (cache)
+1.1 文件安全传输小工具：croc
+1.2 Diagram as Code：Diagrams
+2.1 智能爬虫：autoscraper
+2.2 30s 就能理解的 JS 代码：30-seconds-of-code
+2.3 免安装免注册群视频：talk
+2.4 终极教程：ultimate-python
+2.5 Linux 挑战：linuxupskillchallenge
+2.6 高性能博客模版：eleventy-high-performance-blog
+
+2.7 破解小能手：Ciphey
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247489294&idx=1&sn=f4f6c303c57bd6bc682e0ebbd1091112&chksm=905ba250a72c2b46f498c30c0bc1218ad2aac3d6fcf837e12759f907a0b3b924b95a1e126ed7&scene=21 (cache)
+1.1 脚本音乐：JazzIt
+1.2 GitHub 官方 cli：cli
+2.1 模糊即服务：OneFuzz
+2.2 测试好帮手：ARL
+2.3 Linux 学习利器：linux-command
+2.4 按层分析 Docker：dive
+2.5 制图神器：FreeCAD
+2.6 文本变代码：jupyter-text2code
+2.7 视频补帧：DAIN
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247489119&idx=1&sn=7acceaf83c818cd7738fcf2ec4763c77&chksm=905ba301a72c2a17b05c2fa9904893b665562834f4c62a7e3cfdbcb7d4cc14a1abb820384f0d&scene=21 (network: 200 over h2)
+1.1 轻松学 Vim：Learn-Vim
+1.2 不可思议 PyTorch 清单：the-incredible-pytorch
+2.1 数据可视化图形库：matplotplusplus
+2.2 腾讯开源管理工具：Fes.js
+2.3 异常股无所遁形：Surpriver
+2.4 高颜值 Python GUI：DearPyGui
+2.5 程序员做 PPT 的方式：present
+2.6 Python 算子变 Latex：handcalcs
+2.7 可视化调试工具：vscode-debug-visualizer
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247489009&idx=1&sn=7df50eade189e769294fba54260568cb&chksm=905ba0afa72c29b961cadf03a4920bcb2dcd6c8f5951f5371352b4548720c2d066794efb384d&scene=21 (network: 200 over h2)
+1.1 终极 Go 指南：ultimate-go
+1.2 免费书籍：free-programming-books
+2.1 强大的搜索引擎：MeiliSearch
+2.2 科技酷炫 UI 框架：arwes
+2.3 自学笔记：CS-Notes
+2.4 数据驱动游戏引擎：Bevy
+2.5 Facebook 开源 ORM 框架：ent
+2.6 自动化安全调用 C++：autocxx
+2.7 制作可启动 U 盘工具：Ventoy
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247488649&idx=1&sn=22a1f8a3fb7bc2ef569c0a28ae09e18a&chksm=905ba1d7a72c28c1e6bc4a0c7546ade33b58249f196a05e893bbb599bc32e73401162d264e8f&scene=21 (network: 200 over h2)
+1.1 计算机视觉最佳实践：computervision-recipes
+1.2 东半球最酷的学习项目：hello-algorithm
+2.1 前端代码自动迁移：ts-migrate
+2.2 万物皆可 RSS：RSSHub
+2.3 “人肉”工具：sherlock
+2.4 爬虫工具：InfoSpider
+2.5 日历小插件：fullcalendar
+2.6 机器学习大学：aws-machine-learning-university-accelerated-nlp
+2.7 视频下载器：annie
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247488353&idx=1&sn=7c02471c51a12d9014436173e78e99ea&chksm=905ba63fa72c2f29247b91f9e64573e0a86540d12085327f50a76a3730848973283dbc87bb53&scene=21 (network: 200 over h2)
+1.1 免费高颜值图标：Heroicons
+1.2 美照共享助力机器学习：Dataset
+2.1 前端工具链：rome
+2.2 AI 3D 场景重制：ATLAS
+2.3 20 天入门 pytorch：eat_pytorch_in_20_days
+2.4 高颜值 macOS 图标：macOS_Big_Sur_icons_replacements
+2.5 亚马逊安全工具集：my-arsenal-of-aws-security-tools
+2.6 类型检测工具：pyre-check
+2.7 太极之趣：taichi
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247487887&idx=1&sn=d4c0a0c5041709dc5d7e469ec85e6b72&chksm=905ba4d1a72c2dc7c87adb325d8280448730282df42f780a67b0f1608eb9ee673c19a79b81e3&scene=21 (network: 200 over h2)
+1.1 你的 GitHub 评分：GitHub Readme Stats
+1.2 图解算法：hello-algorithm
+2.1 了不起的 Profile README：Awesome-Profile-README-templates
+2.2 开发环境：androidx
+2.3 机器学习路径：machine-learning-roadmap
+2.4 非英语母语的 Rust 教程：easy_rust
+2.5 测试平台：Metersphere
+2.6 面试指南：Interviews
+2.7 GitHub 官方路线图：roadmap
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247488173&idx=1&sn=002f33a65eae8c14e3b2145ef566c529&chksm=905ba7f3a72c2ee5222221a1d6a8a026d449775f53ef00ea10d48079e8df7dfa0711c31ab403&scene=21 (network: 200 over h2)
+1.1 json 解析大杀器：simdjson
+1.2 安全工程：how-to-secure-anything
+2.1 万物皆可动：first-order-model
+2.2 平衡生活和工作：955.WLB
+2.3 VSCode 韭菜基金插件：leek-fund
+2.4 cat 克隆版：bat
+2.5 rust 小练习：rustlings
+2.6 深度学习引擎：oneflow
+2.7 资源监视器：bpytop
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247487834&idx=1&sn=315ea68b47de91ed591e00fbfd284abd&chksm=905ba404a72c2d12000803bd7966d37918b44a6829465dea0b5b55c943a71c45ea6d7b9fbc1d&scene=21 (network: 200 over h2)
+1.1 完美体验 React 组件库：react-spectrum
+1.2 Flutter 最佳实践：Best-Flutter-UI-Templates
+2.1 全栈股票系统：PythonStock
+2.2 Node.js 版 Wiki：Wiki.js
+2.3 进程监控工具：ProcMon-for-Linux
+2.4 社区速建：Forem
+2.5 Java 全家桶：JavaFamily
+2.6 亚马逊工程师亲测：coding-interview-university
+2.7 Linux 降噪小工具：NoiseTorch
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247487336&idx=1&sn=8390174cf774877d03349c43a45e26dc&chksm=905bba36a72c3320620002e9377744abf594fb0d7d86226a8667be71270260c23ca7f6ba7e65&scene=21 (network: 200 over h2)
+1.1 程序员编码指南：CodeGuid
+1.2 油管复制版：youtubeclone-frontend
+2.1 超强预训练语言模型：GPT-3
+2.2 轻量级中文 OCR 模型：PaddleOCR
+
+2.3 Google API 大全：googleapis
+2.4 速查表大全：cheatsheets
+2.5 SwiftUI：RedditOS
+2.6 黑客大全：hackingtool
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247487062&idx=1&sn=3dced1079a237be8e82e02aa009493f7&chksm=905bbb08a72c321ec7051b6031f04d64c5c140f0567da4bc84c63dc15de7639f9abc80022138&scene=21 (network: 200 over h2)
+1.1 黑客全家桶：hackingtool
+1.2 文字提取利器：Easy OCR
+2.1 高颜值终端模拟器：eDEX-UI
+2.2 深度学习 500 问：DeepLearning-500-questions
+2.3 射击游戏：BYTEPATH
+2.4 git 好助手：gitqlite
+2.5 大厂亲测：backstage
+2.6 戏（喜）剧化对话：github-drama
+2.7 高颜值 Redis GUI ：rocketredis
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247486998&idx=1&sn=3d5e88a1c5fdcdfc611ea2aa1997ad3b&chksm=905bbb48a72c325ec806ea81b511f730290bd9c201a6e991ac8bbbef72e3fa6651b549d43ab0&scene=21 (network: 200 over h2)
+1.1 听歌，听下架的歌：Unlock-netease-cloud-music
+1.2 WTF Resume：resume-builder
+2.1 密码分析：Pwdb-Public
+2.2 操控你的安卓设备：scrcpy
+2.3 知识管理：foam
+2.4 SSH 小管家：Secretive
+2.5 响应式开发必马：responsively-app
+2.6 巨硬字体：Cascadia Code
+2.7 中文版：OnJava8
+3.1 游戏大全：Free Python Games
+3.2 命令行斗地主：Ratel
+3.3 沙盒游戏：Mindustry
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247486928&idx=1&sn=fa57c8442d8cce00239ef46dc8302c0c&chksm=905bb88ea72c3198b79707cbd535edba38b3e53756cc990862a3ee22707ac1d9109388be7b94&scene=21 (network: 200 over h2)
+1.1 手把手教你做数据库：toyDB
+1.2 安全守护防漏洞：Tsunami
+2.1 AB 小游戏：abstreet
+2.2 有声插件：elevator.js
+2.3 向 Photoshop 看齐：PhotoGIMP
+2.4 微软开源：Fluent System Icons
+2.5 程序员查看天气的正确姿势：wttr.in
+2.6 性能取样：fgprof
+2.7 物联网平台：ThingsBoard
+3.1 助力 SQL：Beekeeper Studio
+3.2 可视化：falcon
+3.3 多种数据库操作：hue
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247486073&idx=1&sn=164860be4c745d5bf9b67476168fbd41&chksm=905bbf27a72c36313db351cb01d0f0e85e6c7f5ea4dcbda9579013d85dbf8a9f13c052e6f744&scene=21 (network: 200 over h2)
+1.1 GitHub 官方出品：super-linter
+1.2 彩虹屁 VSCode 插件：vscode-rainbow-fart
+2.1 Python 实用编程：practical-python
+2.2 有码变高清：pulse
+2.3 刷题模版：algorithm-pattern
+2.4 一分钟一个小 case：python-small-examples
+2.5 专业管理 k8s：lens
+2.6 益智游戏：shapez.io
+2.7 数据科学：GoPlus
+3.1 量化交易框架：vnpy
+3.2 量化交易组件：easytrader
+3.3 30 天掌握量化交易：stock
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247486043&idx=1&sn=88e4d01c4650a6bce85c546774d1b06a&chksm=905bbf05a72c3613a85c3b0348fdd97d0e7e14519eb6fa9914bf90218380dee66de6d48b1d8b&scene=21 (network: 200 over h2)
+1.1 遗传算法玩具：genetic-drawing
+
+1.2 马斯克火箭：SpaceX-API
+2.1 Go 语法书：go-ast-book
+2.2 数据库好搭档：xgenecloud
+2.3 前端小玩意：vanillawebprojects
+2.4 统计代码：lihang-code
+2.5 Poke 辅助工具：Pokedex
+2.6 高性能框架：Fastapi
+2.7 JS 面经：javascript-questions
+3.1 优雅赚钱：howto-make-more-money
+3.2 定投改变命运：regular-investing-in-box
+3.3 机器学习课程个人笔记：Coursera-ML-AndrewNg-Notes
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485981&idx=1&sn=5f6d8beea914c7c56dcfe079d7b14a82&chksm=905bbf43a72c36559d2c55b84c3abdecf9762832bd267f86618ca76ac032200a6a5dfa16e907&scene=21 (network: 200 over h2)
+1.1 青春回忆：CnC_Remastered_Collection
+1.2 实用指南：practical-python
+2.1 跨平台自动化：robotgo
+2.2 Docker 上的 Mac：Docker-OSX
+2.3 数学图表生成工具：Penrose
+2.4 换脸技术：Deepfakes
+2.5 面经：go-interview
+2.6 高颜值播放器：ZY-Player
+2.7 最佳实践：nodebestpractices
+2.8 苹果开源密码管理器：password-manager-resources
+3.1 内存占用分析：Memory Profiler
+3.2 异常监控：Sentry
+3.3 内存分析：scalene
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485923&idx=1&sn=8a1af0bb33c3ae263285fc3166d7cf99&chksm=905bbcbda72c35abc5af85586349928487269de8aee1cc96e0b2404dfdd8824c22ac9aebc233&scene=21 (network: 200 over h2)
+1.1 macOS 免费体验：macos-virtualbox
+2.1 Web 开发提速：responsively-app
+2.2 SQL 分析：DuckDB
+2.3 UI 组件管理器：Storybook
+2.4 Demo 之母：RealWorld
+
+2.5 API 集大成者：Public APIs
+2.6 公式推导解析：pumpkin-book
+2.7 超级技术栈：build-your-own-x
+2.8 架构师技术图谱：awesome-architecture
+3.1 页面自动加载：vscode-live-server
+3.2 拼写检查：vscode-spell-checker
+3.3 Vim 仿真器：VSCodeVim
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485728&idx=1&sn=4d6815b57cac72d04671d2174ce9eb1c&chksm=905bbc7ea72c356860ed5ede0d37a98700a0d57743aa9c4d66d7ce931ca443849454e4342ec6&scene=21 (network: 200 over h2)
+1.1 Go 新手起手式：learngo
+2.1 git 终端：gitui
+2.2 C++ 学算法：C-Plus-Plus
+2.3 Windows 工具集：PowerToys
+2.4 Jetpack MVVM 最佳实践：Jetpack-MVVM-Best-Practice
+2.5 React 状态管理：Recoil
+2.6 Apple & Google 合力：exposure-notifications-server
+2.7 统计学习方法：Statistical-Learning-Method_Code
+2.8 轻量级 Web 服务器：TinyWebServer
+3.1 Touch Bar 废物再利用：Pock
+3.2 资源订阅：NetNewsWire
+3.3 窗口管理器：Rectangle
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485704&idx=1&sn=90eb15d0d404e29083647bb4c2299f15&chksm=905bbc56a72c35408ce4227e69ff856be45379678521703e1f4b3239bb9133dba8d643dd24ce&scene=21 (network: 200 over h2)
+1.1 在 VSCode 里画流程图：Draw.io Integration
+1.2 打破次元壁：Pose Animator
+2.1 可解释的机器学习：InterpretableMLBook
+2.2 AI 圣经：DeepLearning
+2.3 图解 SHA-256 工作原理：sha256-animation
+2.4 全方位服务运维：Spug
+2.5 更好的 Node.js：Deno
+2.6 轻量级编辑器：lite
+2.7 实战深度学习：spring-boot-demo
+2.8 渗透测试好帮手：OneForAll
+3.1 提高 Android UI 开发效率的 UI 库：QMUI_Android
+3.2 登陆 So Easy：JustAuth
+3.3 解决 Java 70% 重复工作：jeecg-boot
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485677&idx=1&sn=1436a3e9d8e3d982e51b666098959800&chksm=905bbdb3a72c34a553ddb49e8204d5a6493c9ea303e0dae83e7d5211ad362635ccae703d60e2&scene=21 (network: 200 over h2)
+1.1 人人都是 Google 工程师：eng-practice
+1.2 开发设计宝藏仓：Design Resources For Developers
+2.1 面试 500 问：reactjs-interview-questions
+2.2 CRUD 可视化：Go-sword
+2.3 终端美化：Rich
+2.4 助力 SQL：Beekeeper Studio
+2.5 神经网路可视化：CNN Explainer
+2.6 静态网站福音 & Web 服务器：Caddy
+2.7 音乐 DIY：Jukebox
+3.1 大厂面试合集：interview_internal_reference
+3.2 大厂工程师每日一测：Daily-Interview-Question
+3.3 大厂工程师学习清单：coding-interview-university
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485613&idx=1&sn=6d03c4ae59f180a050917f9f88a37aa5&chksm=905bbdf3a72c34e5cf4870c53611e95ec0c2dedee43503aeeeeac6813fe35be3f22295fc17e5&scene=21 (network: 200 over h2)
+1.1 所见即可拷：AR Cut & Paste
+1.2 亚马逊工程师亲测：coding-interview-university
+2.1 扫码传输利器：qrcp
+2.2 算法实现：Java
+2.3 手绘图形库：Rough.js
+2.4 ins 千粉事迹（1/1）：InstaPy
+2.5 学…学…学不动 Vue 3.0：vue-next
+2.6 这应该是最全的 Flutter 学习教程：Flutter-Course-Resources
+2.7 建站萌新福利：Docusaurus
+3.1 LeetCode GitHub 首席：LeetCode
+3.2 动起来：LeetCodeAnimation
+3.3 人手把手撕 LeetCode 题目：fucking-algorithm
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485564&idx=1&sn=36a94ff4b4629cb0cde461686949ea5f&chksm=905bbd22a72c34344512dbadc3db7842a866f277e14e9ce3ce19e2ab697d0b673e3df491a198&scene=21 (network: 200 over h2)
+1.1 Bash 教程：bash-tutorial
+1.2 AI 外挂：PyBoy
+1.3 Linux 神器：bashtop
+1.4 后台管理：gin-vue-admin
+1.5 Baidu-XunleiVIP
+2.1 分布式数据库中间件：shardingsphere
+2.2 今天你学了吗：TIL
+2.3 5s 语音克隆：Real-Time-Voice-Cloning
+2.4 C++ 初学者：CPlusPlusThings
+2.5 摆脱 CSS：tailwindcss
+3.1 人人都是抠图师：Background-Matting
+3.2 3D 照片修复：3d-photo-inpainting
+3.3 人像卡通化 (Photo to Cartoon)：photo2cartoon
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485553&idx=1&sn=f382b131e1a37b5f927d14f902e6b854&chksm=905bbd2fa72c3439a7779cc7951f15fc70112e7ab066734b94a51b0b312b05b7558893041fb6&scene=21 (network: 200 over h2)
+1.1 3D 照片修复：3d-photo-inpainting
+1.2 视频聊天：Zipcall - Decentralized Video Chat
+1.3 脸部检测：DBFace
+1.4 社交追踪：opentrace-ios
+1.5 视频头像变身：avatarify
+1.6 xmsl 翻译机：nbnhhsh
+2.1 追踪 bug：git-bug
+2.2 Python 设计的背后原理：wtfpython-cn
+2.3 算法 js 版：javascript-algorithms
+2.4 最全中文诗歌古典文集数据库：chinese-poetry
+2.5 推特白嫖党：twint
+2.6 云原生服务：Cortex
+3.1 Spring Boot & MyBatis的种子项目：spring-boot-api-project-seed
+3.2 Spring Boot 专栏：SpringBoot-Labs
+3.3 分布式敏捷开发：zheng
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485537&idx=1&sn=ced74685898f2331c6ef598f914d93e5&chksm=905bbd3fa72c3429a691eb352959577ffec20d2c97dcfcb5d6a5e0982c451c62b95f31ee38bd&scene=21 (network: 200 over h2)
+1.1 自动快照库：playbook-ios
+1.2 博客项目：nodejs-backend-architecture-typescript
+1.3 30 天吃掉 TensorFlow2.0：eat_tensorflow2_in_30_days
+1.4 人人都是抠图师：Background-Matting
+1.5 手把手教你炒大头菜：ac-nh-turnip-prices
+1.6 高分辨率压缩神器：SReC
+1.7 可视化学 web：web-skills
+1.8 了不起的 Docker Compose：awesome-compose
+2.1 云盘加速：rclone
+2.2 优雅赚零花钱：howto-make-more-money
+2.3 又见 Spring：spring-analysis
+3.1 手把手撕 LeetCode 题目：fucking-algorithm
+3.2 免费小书：free-programming-books
+3.3 前人经验：interview_internal_reference
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485526&idx=1&sn=595816d5f09ebf1f501d3df807006c13&chksm=905bbd08a72c341e1edb6314c5389baa7f2b5dd35ebcfe3dc082c10f732dc5fecada361e2c42&scene=21 (network: 200 over h2)
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485507&idx=1&sn=22027a3fa5a94ea25f53c33df4086eda&chksm=905bbd1da72c340b735c3fe629f73e7c7e217565d617e6a367fa22ef0990e702903ec7e153e9&scene=21 (network: 200 over h2)
+1.1 自动炒股机：RL-Stock
+1.2 另类简历：react-ultimate-resume
+1.3 当 Go 遇见 LeetCode：go-leetcode
+1.4 三维 vim：Vim³
+2.1 和前辈学技术：technology-talk
+2.2 spring 最佳实践：spring-boot-api-project-seed
+2.3 又见开发路线：developer-roadmap
+2.4 模拟器：darling
+2.5  一个项目学前端：Blog
+2.6 可视化学 Git：LearnGitBranching
+2.7 萌萌哒草图工具：Excalidraw
+3.1 GUI：Dear ImGui
+3.2 云端 IDE 平台：Eclipse Theia
+3.3 跨平台 GUI 库：iced
+1.1 微服务工具：Tye
+1.2 监控方案：Nightingale
+1.3 专业必备：hostctl
+1.4 模型生成高性能代码：Jittor
+1.5 区块开发：XBlock
+1.6 疫情 cli：corona-cli
+1.7 计算框架：MegEngine
+2.1 音视频播放系统：NymphCast
+2.2 高校资源又来了：REKCARC-TSC-UHT
+2.3 LeetCode 最佳实践：LeetCodeAnimation
+2.4 awesome 系列：awesome-java
+2.5 大型网站模拟版：Website login model
+2.6 家庭管理：grocy
+2.7 Go 学习必🐎：night-reading-go
+2.8 网速监控：Traffic Monitor
+2.9 分布式 RTC 系统：ION
+3.1 Spring 一网打尽：SpringAll
+3.2 学习路线：Ai-Learn
+3.3 计算机论文：Papers We Love
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485445&idx=1&sn=578f7a8ce625cb81fa20b5451912add0&chksm=905bbd5ba72c344d1312ce4874912ad7e2ff70444d3f33560945182acb5569a13e9b9ac0bed9&scene=21 (network: 200 over h2)
+1.1 资产管理：Bayonet
+1.2 英特尔网卡驱动：itlwm
+1.3 AutoML 资料库：automl
+1.4 一个 App 学 Android：Foodium
+2.1 渗透测试：pentest-tools
+2.2 面试复习笔记：Front-End-Interview-Notebook
+2.3 命令备忘工具：NAVI
+2.4 反向代理：frp
+2.5 不可思议的浏览器：browser-2020
+2.6 视频工具：Jitsi Meet
+2.7 会议系统：BigBlueButton
+2.8 终端 UI：lazygit
+3.1 k8s IDE：Lens
+3.2 k8s 最佳实践：follow-me-install-kubernetes-cluster
+3.3 可视化部署：StatusBay
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485428&idx=1&sn=9c112eb31d78aa5c5bee9e24d1a1580f&chksm=905bb2aaa72c3bbcc19eda2d6cafac0f1921cb4f10d69061a2421c97a897f1fe3d681801e7a8&scene=21 (network: 200 over h2)
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485407&idx=1&sn=15ec1aeea59c2b83d3d85fc7adc3d4a5&chksm=905bb281a72c3b972aa7d8a85f262f72c88fd3021f9ccb511bc2ed0458db518511cbfd086c61&scene=21 (network: 200 over h2)
+1.1 中文 ocr：chineseocr_lite
+1.2 可视化疫情数据：COVID-19
+1.3 先马为敬：ultimate-coding-resources
+1.4 升级版 Google Drive
+1.5 个性化的 Apple Music：AppleMusicUltra
+1.6 专属图片流：photo-stream
+1.7 预训练工具：ELECTRA
+2.1 数据同步：DataX
+2.2 软件逆向：Ghidra
+2.3 正则快速入门：learn-regex
+2.4 payload 大全：Payloads All The Things
+2.5 后台管理：EL-ADMIN
+2.6 计算机视觉库：Kornia
+2.7 自动生成字幕：video-srt-windows
+2.8 Sweet Java：Hutool
+3.1 变身黑客：TheFatRat
+3.2 安全测试伴侣：SecLists
+3.3 安全第一：Dangerzone
+1.1 苹果开源参数解析器：Swift Argument Parser
+1.2 fastai 草稿：fastbook
+1.3 数据集：CLUEDatasetSearch
+1.4 电商系统+1：ElysiumMall
+1.5 谷歌开源：FuzzBench
+1.6 CAA 检测：lecaa
+2.1 500+ CSS 图标：css.gg
+2.2 学 C++ 吗？：CPlusPlusThings
+2.3 Python 代码段：pysheeet
+2.4 云相册：lsky-pro
+2.5 CSS 实践：Simpsons in CSS
+2.6 Go 版 Dubbo：dubbo-go
+2.7 数据科学：Data-Science--Cheat-Sheet
+3.1 口罩项目：FaceMaskDetection
+3.2 东京疫情数据：东京都新型コロナウイルス感染症対策サイト
+3.3 可视化疫情数据：COVID-19
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485354&idx=1&sn=c7175c7bb53b68a98776c5a47eceee17&chksm=905bb2f4a72c3be2a7ed22a23143c0c18d41aecb04e8a285549c5e593351e8ba1167179faf35&scene=21 (network: 200 over h2)
+1.1 数据分析：PostHog
+1.2 建站神器：goxygen
+1.3 收藏夹+1：25 most recommended programming books of all-time
+1.4 视频工具：Free-HLS
+1.5 UI icon：Heroicons
+1.6 事件管理器：Dispatch
+
+1.7 刷题吗？：fucking-algorithm
+1.8 高校资源：AI Curriculum
+2.1 iOS 虚拟机：UTM
+2.2 Python 实践：pytudes
+2.3 图片处理：BlurHash
+2.4 机器学习作业：coursera-ml-py
+2.5 Java 实操：flink-recommandSystem-demo
+2.6 应用 Case：industry-machine-learning
+3.1 前端测试：Front-End-Checklist
+3.2 前端小框架：Alpine.js
+3.3 Demo 之母：RealWorld
+200: http://mp.weixin.qq.com/s?__biz=MzA5MzYyNzQ0MQ==&mid=2247485223&idx=1&sn=022ac54b19940cdcc93323f957eae366&chksm=905bb279a72c3b6f341730b1cd1fbff419c8f4da9edf97b9b7c8a37e90617f5c6e95f16ccc28&scene=21 (network: 200 over h2)
+1.1 日获 2k+ star GitHub 热门：1 on 1 Meeting Questions
+1.2 防窃听玩具：wearable-microphone-jamming
+1.3 SIMD几何代数库：Klein
+1.4 7 天系列：7days-golang
+1.5 万能 Excel：computer-vision-basics-in-microsoft-excel
+1.6 Duang 人不见了：Real-Time-Person-Removal
+1.7 视频工具：Waifu2x-Extension-GUI
+2.1命令行的艺术：the-art-of-command-lines
+2.2 全能：The System Design Primer
+2.3 笔记工具：Joplin
+2.4 代码查看工具：Sourcegraph
+2.5 前端神器：Playwright
+2.6 GUI 调试器：GDBFrontend
+2.7 管理工具：DBeaver
+2.8 大型系统资料：awesome-scalability
+3.1 计算机视觉：computervision-recipes
+3.2 深度学习：Trax
+3.3 Google 开源应用模型：MediaPipe
+
+
